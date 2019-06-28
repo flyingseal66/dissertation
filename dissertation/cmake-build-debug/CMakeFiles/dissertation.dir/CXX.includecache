@@ -6,17 +6,31 @@
 
 #IncludeRegexTransform: 
 
+F:/projects/CLionProjects/dissertation/RadixSortMT.h
+
+F:/projects/CLionProjects/dissertation/RadixSortST.h
+
 F:/projects/CLionProjects/dissertation/main.cpp
 iostream
 -
 ctime
 -
-quicksortShortSingle.h
-F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+random
+-
+thread
+-
+string
+-
+quicksortSS.h
+F:/projects/CLionProjects/dissertation/quicksortSS.h
+quicksortMT.h
+F:/projects/CLionProjects/dissertation/quicksortMT.h
+RadixSortST.h
+F:/projects/CLionProjects/dissertation/RadixSortST.h
+RadixSortMT.h
+F:/projects/CLionProjects/dissertation/RadixSortMT.h
 
-F:/projects/CLionProjects/dissertation/quicksortShortSingle.cpp
-quicksortShortSingle.h
-F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+F:/projects/CLionProjects/dissertation/quicksortMT.h
 
-F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+F:/projects/CLionProjects/dissertation/quicksortSS.h
 

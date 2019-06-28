@@ -124,6 +124,60 @@ dissertation\fast:
 	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\build
 .PHONY : dissertation\fast
 
+RadixSortMT.obj: RadixSortMT.cpp.obj
+
+.PHONY : RadixSortMT.obj
+
+# target to build an object file
+RadixSortMT.cpp.obj:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortMT.cpp.obj
+.PHONY : RadixSortMT.cpp.obj
+
+RadixSortMT.i: RadixSortMT.cpp.i
+
+.PHONY : RadixSortMT.i
+
+# target to preprocess a source file
+RadixSortMT.cpp.i:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortMT.cpp.i
+.PHONY : RadixSortMT.cpp.i
+
+RadixSortMT.s: RadixSortMT.cpp.s
+
+.PHONY : RadixSortMT.s
+
+# target to generate assembly for a file
+RadixSortMT.cpp.s:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortMT.cpp.s
+.PHONY : RadixSortMT.cpp.s
+
+RadixSortST.obj: RadixSortST.cpp.obj
+
+.PHONY : RadixSortST.obj
+
+# target to build an object file
+RadixSortST.cpp.obj:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortST.cpp.obj
+.PHONY : RadixSortST.cpp.obj
+
+RadixSortST.i: RadixSortST.cpp.i
+
+.PHONY : RadixSortST.i
+
+# target to preprocess a source file
+RadixSortST.cpp.i:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortST.cpp.i
+.PHONY : RadixSortST.cpp.i
+
+RadixSortST.s: RadixSortST.cpp.s
+
+.PHONY : RadixSortST.s
+
+# target to generate assembly for a file
+RadixSortST.cpp.s:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\RadixSortST.cpp.s
+.PHONY : RadixSortST.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -151,32 +205,59 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\main.cpp.s
 .PHONY : main.cpp.s
 
-quicksortShortSingle.obj: quicksortShortSingle.cpp.obj
+quicksortMT.obj: quicksortMT.cpp.obj
 
-.PHONY : quicksortShortSingle.obj
+.PHONY : quicksortMT.obj
 
 # target to build an object file
-quicksortShortSingle.cpp.obj:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortShortSingle.cpp.obj
-.PHONY : quicksortShortSingle.cpp.obj
+quicksortMT.cpp.obj:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortMT.cpp.obj
+.PHONY : quicksortMT.cpp.obj
 
-quicksortShortSingle.i: quicksortShortSingle.cpp.i
+quicksortMT.i: quicksortMT.cpp.i
 
-.PHONY : quicksortShortSingle.i
+.PHONY : quicksortMT.i
 
 # target to preprocess a source file
-quicksortShortSingle.cpp.i:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortShortSingle.cpp.i
-.PHONY : quicksortShortSingle.cpp.i
+quicksortMT.cpp.i:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortMT.cpp.i
+.PHONY : quicksortMT.cpp.i
 
-quicksortShortSingle.s: quicksortShortSingle.cpp.s
+quicksortMT.s: quicksortMT.cpp.s
 
-.PHONY : quicksortShortSingle.s
+.PHONY : quicksortMT.s
 
 # target to generate assembly for a file
-quicksortShortSingle.cpp.s:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortShortSingle.cpp.s
-.PHONY : quicksortShortSingle.cpp.s
+quicksortMT.cpp.s:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortMT.cpp.s
+.PHONY : quicksortMT.cpp.s
+
+quicksortSS.obj: quicksortSS.cpp.obj
+
+.PHONY : quicksortSS.obj
+
+# target to build an object file
+quicksortSS.cpp.obj:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.obj
+.PHONY : quicksortSS.cpp.obj
+
+quicksortSS.i: quicksortSS.cpp.i
+
+.PHONY : quicksortSS.i
+
+# target to preprocess a source file
+quicksortSS.cpp.i:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.i
+.PHONY : quicksortSS.cpp.i
+
+quicksortSS.s: quicksortSS.cpp.s
+
+.PHONY : quicksortSS.s
+
+# target to generate assembly for a file
+quicksortSS.cpp.s:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.s
+.PHONY : quicksortSS.cpp.s
 
 # Help Target
 help:
@@ -187,12 +268,21 @@ help:
 	@echo ... dissertation
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... RadixSortMT.obj
+	@echo ... RadixSortMT.i
+	@echo ... RadixSortMT.s
+	@echo ... RadixSortST.obj
+	@echo ... RadixSortST.i
+	@echo ... RadixSortST.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... quicksortShortSingle.obj
-	@echo ... quicksortShortSingle.i
-	@echo ... quicksortShortSingle.s
+	@echo ... quicksortMT.obj
+	@echo ... quicksortMT.i
+	@echo ... quicksortMT.s
+	@echo ... quicksortSS.obj
+	@echo ... quicksortSS.i
+	@echo ... quicksortSS.s
 .PHONY : help
 
 

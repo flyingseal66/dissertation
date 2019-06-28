@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "F:/projects/CLionProjects/dissertation/RadixSortMT.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/RadixSortMT.cpp.obj"
+  "F:/projects/CLionProjects/dissertation/RadixSortST.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/RadixSortST.cpp.obj"
   "F:/projects/CLionProjects/dissertation/main.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/main.cpp.obj"
-  "F:/projects/CLionProjects/dissertation/quicksortShortSingle.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/quicksortShortSingle.cpp.obj"
+  "F:/projects/CLionProjects/dissertation/quicksortMT.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/quicksortMT.cpp.obj"
+  "F:/projects/CLionProjects/dissertation/quicksortSS.cpp" "F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir/quicksortSS.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 

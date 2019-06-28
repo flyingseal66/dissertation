@@ -3,7 +3,7 @@
 #include <random>
 #include <thread>
 #include<string>
-#include "quicksortSS.h"
+#include "quicksortST.h"
 #include "quicksortMT.h"
 #include "RadixSortST.h"
 #include "RadixSortMT.h"

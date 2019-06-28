@@ -84,13 +84,31 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortMT.cpp">
+			<Option target="dissertation"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortMT.h">
+			<Option target="dissertation"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortST.cpp">
+			<Option target="dissertation"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortST.h">
+			<Option target="dissertation"/>
+		</Unit>
 		<Unit filename="F:/projects/CLionProjects/dissertation/main.cpp">
 			<Option target="dissertation"/>
 		</Unit>
-		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortShortSingle.cpp">
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortMT.cpp">
 			<Option target="dissertation"/>
 		</Unit>
-		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortShortSingle.h">
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortMT.h">
+			<Option target="dissertation"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortSS.cpp">
+			<Option target="dissertation"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortSS.h">
 			<Option target="dissertation"/>
 		</Unit>
 		<Unit filename="F:/projects/CLionProjects/dissertation/CMakeLists.txt">

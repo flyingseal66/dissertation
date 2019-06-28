@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dissertation.dir/main.cpp.obj"
-  "CMakeFiles/dissertation.dir/quicksortShortSingle.cpp.obj"
+  "CMakeFiles/dissertation.dir/quicksortSS.cpp.obj"
+  "CMakeFiles/dissertation.dir/quicksortMT.cpp.obj"
+  "CMakeFiles/dissertation.dir/RadixSortST.cpp.obj"
+  "CMakeFiles/dissertation.dir/RadixSortMT.cpp.obj"
   "dissertation.pdb"
   "dissertation.exe"
   "dissertation.exe.manifest"

@@ -2,7 +2,7 @@
 // Created by bubble on 2019/6/28.
 //
 
-#include "quicksortShortSingle.h"
+#include "quicksortST.h"
 using namespace std;
 typedef unsigned long long  int TUint64;
 
