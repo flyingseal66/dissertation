@@ -3,4 +3,4 @@ project(dissertation)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(dissertation main.cpp quicksortShortSingle.cpp quicksortShortSingle.h)
+add_executable(-O3 -o dissertation main.cpp quicksortShortSingle.cpp quicksortShortSingle.h)
