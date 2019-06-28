@@ -105,10 +105,10 @@
 		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortMT.h">
 			<Option target="dissertation"/>
 		</Unit>
-		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortSS.cpp">
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortST.cpp">
 			<Option target="dissertation"/>
 		</Unit>
-		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortSS.h">
+		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortST.h">
 			<Option target="dissertation"/>
 		</Unit>
 		<Unit filename="F:/projects/CLionProjects/dissertation/CMakeLists.txt">

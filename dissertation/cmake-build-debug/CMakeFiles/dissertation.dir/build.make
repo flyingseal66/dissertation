@@ -77,23 +77,23 @@ CMakeFiles\dissertation.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\dissertation.dir\main.cpp.s /c F:\projects\CLionProjects\dissertation\main.cpp
 <<
 
-CMakeFiles\dissertation.dir\quicksortSS.cpp.obj: CMakeFiles\dissertation.dir\flags.make
-CMakeFiles\dissertation.dir\quicksortSS.cpp.obj: ..\quicksortSS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dissertation.dir/quicksortSS.cpp.obj"
+CMakeFiles\dissertation.dir\quicksortST.cpp.obj: CMakeFiles\dissertation.dir\flags.make
+CMakeFiles\dissertation.dir\quicksortST.cpp.obj: ..\quicksortST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dissertation.dir/quicksortST.cpp.obj"
 	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\dissertation.dir\quicksortSS.cpp.obj /FdCMakeFiles\dissertation.dir\ /FS -c F:\projects\CLionProjects\dissertation\quicksortSS.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\dissertation.dir\quicksortST.cpp.obj /FdCMakeFiles\dissertation.dir\ /FS -c F:\projects\CLionProjects\dissertation\quicksortST.cpp
 <<
 
-CMakeFiles\dissertation.dir\quicksortSS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dissertation.dir/quicksortSS.cpp.i"
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe > CMakeFiles\dissertation.dir\quicksortSS.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\projects\CLionProjects\dissertation\quicksortSS.cpp
+CMakeFiles\dissertation.dir\quicksortST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dissertation.dir/quicksortST.cpp.i"
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe > CMakeFiles\dissertation.dir\quicksortST.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\projects\CLionProjects\dissertation\quicksortST.cpp
 <<
 
-CMakeFiles\dissertation.dir\quicksortSS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dissertation.dir/quicksortSS.cpp.s"
+CMakeFiles\dissertation.dir\quicksortST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dissertation.dir/quicksortST.cpp.s"
 	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\dissertation.dir\quicksortSS.cpp.s /c F:\projects\CLionProjects\dissertation\quicksortSS.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\dissertation.dir\quicksortST.cpp.s /c F:\projects\CLionProjects\dissertation\quicksortST.cpp
 <<
 
 CMakeFiles\dissertation.dir\quicksortMT.cpp.obj: CMakeFiles\dissertation.dir\flags.make
@@ -156,7 +156,7 @@ CMakeFiles\dissertation.dir\RadixSortMT.cpp.s: cmake_force
 # Object files for target dissertation
 dissertation_OBJECTS = \
 "CMakeFiles\dissertation.dir\main.cpp.obj" \
-"CMakeFiles\dissertation.dir\quicksortSS.cpp.obj" \
+"CMakeFiles\dissertation.dir\quicksortST.cpp.obj" \
 "CMakeFiles\dissertation.dir\quicksortMT.cpp.obj" \
 "CMakeFiles\dissertation.dir\RadixSortST.cpp.obj" \
 "CMakeFiles\dissertation.dir\RadixSortMT.cpp.obj"
@@ -165,7 +165,7 @@ dissertation_OBJECTS = \
 dissertation_EXTERNAL_OBJECTS =
 
 dissertation.exe: CMakeFiles\dissertation.dir\main.cpp.obj
-dissertation.exe: CMakeFiles\dissertation.dir\quicksortSS.cpp.obj
+dissertation.exe: CMakeFiles\dissertation.dir\quicksortST.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\quicksortMT.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\RadixSortST.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\RadixSortMT.cpp.obj

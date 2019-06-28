@@ -232,32 +232,32 @@ quicksortMT.cpp.s:
 	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortMT.cpp.s
 .PHONY : quicksortMT.cpp.s
 
-quicksortSS.obj: quicksortSS.cpp.obj
+quicksortST.obj: quicksortST.cpp.obj
 
-.PHONY : quicksortSS.obj
+.PHONY : quicksortST.obj
 
 # target to build an object file
-quicksortSS.cpp.obj:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.obj
-.PHONY : quicksortSS.cpp.obj
+quicksortST.cpp.obj:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortST.cpp.obj
+.PHONY : quicksortST.cpp.obj
 
-quicksortSS.i: quicksortSS.cpp.i
+quicksortST.i: quicksortST.cpp.i
 
-.PHONY : quicksortSS.i
+.PHONY : quicksortST.i
 
 # target to preprocess a source file
-quicksortSS.cpp.i:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.i
-.PHONY : quicksortSS.cpp.i
+quicksortST.cpp.i:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortST.cpp.i
+.PHONY : quicksortST.cpp.i
 
-quicksortSS.s: quicksortSS.cpp.s
+quicksortST.s: quicksortST.cpp.s
 
-.PHONY : quicksortSS.s
+.PHONY : quicksortST.s
 
 # target to generate assembly for a file
-quicksortSS.cpp.s:
-	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortSS.cpp.s
-.PHONY : quicksortSS.cpp.s
+quicksortST.cpp.s:
+	$(MAKE) -f CMakeFiles\dissertation.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation.dir\quicksortST.cpp.s
+.PHONY : quicksortST.cpp.s
 
 # Help Target
 help:
@@ -280,9 +280,9 @@ help:
 	@echo ... quicksortMT.obj
 	@echo ... quicksortMT.i
 	@echo ... quicksortMT.s
-	@echo ... quicksortSS.obj
-	@echo ... quicksortSS.i
-	@echo ... quicksortSS.s
+	@echo ... quicksortST.obj
+	@echo ... quicksortST.i
+	@echo ... quicksortST.s
 .PHONY : help
 
 

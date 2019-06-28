@@ -11,17 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f9f1c0f-8eb3-4fea-8c8d-48c1de22374f" name="Default Changelist" comment="modify main method, add time calculator">
-      <change afterPath="$PROJECT_DIR$/RadixSortMT.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RadixSortMT.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RadixSortST.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RadixSortST.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quicksortMT.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quicksortMT.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quicksortSS.h" afterDir="false" />
+    <list default="true" id="1f9f1c0f-8eb3-4fea-8c8d-48c1de22374f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RadixSortMT.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RadixSortMT.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RadixSortST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/RadixSortST.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/build.make" afterDir="false" />
@@ -30,18 +23,12 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/quicksortShortSingle.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/vc140.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/dissertation.dir/vc140.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dissertation.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dissertation.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dissertation.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dissertation.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dissertation.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dissertation.ilk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/dissertation.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/dissertation.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quicksortShortSingle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/quicksortSS.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quicksortShortSingle.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +44,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quicksortSS.cpp">
+        <entry file="file://$PROJECT_DIR$/quicksortST.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
               <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
@@ -66,7 +53,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quicksortSS.h">
+        <entry file="file://$PROJECT_DIR$/quicksortST.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -83,11 +70,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="162">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,20 +85,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RadixSortST.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="100" column="35" selection-start-line="100" selection-end-line="100" selection-end-column="35" />
-              <folding>
-                <element signature="e#42#66#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RadixSortMT.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-end-line="85" selection-end-column="44" />
+            <state relative-caret-position="144">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
               <folding>
                 <element signature="e#42#66#0" expanded="true" />
               </folding>
@@ -142,13 +129,13 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/quicksortSMT.cpp" />
         <option value="$PROJECT_DIR$/quicksortSMT.h" />
-        <option value="$PROJECT_DIR$/RadixSortST.cpp" />
         <option value="$PROJECT_DIR$/RadixSortST.h" />
-        <option value="$PROJECT_DIR$/RadixSortMT.cpp" />
         <option value="$PROJECT_DIR$/RadixSortMT.h" />
         <option value="$PROJECT_DIR$/quicksortMT.h" />
         <option value="$PROJECT_DIR$/quicksortMT.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/RadixSortST.cpp" />
+        <option value="$PROJECT_DIR$/RadixSortMT.cpp" />
       </list>
     </option>
   </component>
@@ -258,21 +245,36 @@
       <option name="project" value="LOCAL" />
       <updated>1561716747296</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modify main method, add time calculator">
+      <created>1561716885547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561716885547</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add #include &lt;math.h&gt;">
+      <created>1561717153379</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561717153379</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9814000" />
+    <option name="totallyTimeSpent" value="10217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20188425" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20188425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47846568" weight="0.5470333" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47779274" visible="true" weight="0.2952243" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -280,8 +282,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5215343" side_tool="true" weight="0.30969608" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.47846568" visible="true" weight="0.30969608" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52220726" side_tool="true" weight="0.2952243" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.47846568" weight="0.30969608" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49932706" weight="0.3299566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -298,7 +300,8 @@
     <MESSAGE value="delete makefile file" />
     <MESSAGE value="change makelist file" />
     <MESSAGE value="modify main method, add time calculator" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify main method, add time calculator" />
+    <MESSAGE value="add #include &lt;math.h&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add #include &lt;math.h&gt;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/makefile">
@@ -322,14 +325,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quicksortSS.cpp">
+    <entry file="file://$PROJECT_DIR$/quicksortST.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quicksortSS.h">
+    <entry file="file://$PROJECT_DIR$/quicksortST.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
@@ -343,30 +346,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RadixSortST.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="100" column="35" selection-start-line="100" selection-end-line="100" selection-end-column="35" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RadixSortMT.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RadixSortMT.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
-          <caret line="85" column="44" lean-forward="true" selection-start-line="85" selection-end-line="85" selection-end-column="44" />
-          <folding>
-            <element signature="e#42#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -389,8 +372,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RadixSortST.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RadixSortMT.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding>
+            <element signature="e#42#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

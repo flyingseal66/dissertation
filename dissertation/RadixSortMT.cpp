@@ -6,6 +6,7 @@
 #include <iostream>
 #include <thread>
 #include <math.h>
+#include <string.h>
 
 using namespace std;
 const int RANGE = 257;

@@ -5,6 +5,8 @@
 #include "RadixSortST.h"
 #include <iostream>
 #include <math.h>
+#include <string.h>
+
 using namespace std;
 const size_t RANGE = 257;
 

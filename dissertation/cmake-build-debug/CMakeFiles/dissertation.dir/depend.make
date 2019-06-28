@@ -11,11 +11,11 @@ CMakeFiles\dissertation.dir\main.cpp.obj: ..\RadixSortMT.h
 CMakeFiles\dissertation.dir\main.cpp.obj: ..\RadixSortST.h
 CMakeFiles\dissertation.dir\main.cpp.obj: ..\main.cpp
 CMakeFiles\dissertation.dir\main.cpp.obj: ..\quicksortMT.h
-CMakeFiles\dissertation.dir\main.cpp.obj: ..\quicksortSS.h
+CMakeFiles\dissertation.dir\main.cpp.obj: ..\quicksortST.h
 
 CMakeFiles\dissertation.dir\quicksortMT.cpp.obj: ..\quicksortMT.cpp
 CMakeFiles\dissertation.dir\quicksortMT.cpp.obj: ..\quicksortMT.h
 
-CMakeFiles\dissertation.dir\quicksortSS.cpp.obj: ..\quicksortSS.cpp
-CMakeFiles\dissertation.dir\quicksortSS.cpp.obj: ..\quicksortSS.h
+CMakeFiles\dissertation.dir\quicksortST.cpp.obj: ..\quicksortST.cpp
+CMakeFiles\dissertation.dir\quicksortST.cpp.obj: ..\quicksortST.h
 
