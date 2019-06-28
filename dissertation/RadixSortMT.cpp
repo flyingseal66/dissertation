@@ -5,6 +5,7 @@
 #include "RadixSortMT.h"
 #include <iostream>
 #include <thread>
+#include <math.h>
 
 using namespace std;
 const int RANGE = 257;

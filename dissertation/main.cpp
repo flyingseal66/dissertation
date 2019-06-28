@@ -58,6 +58,7 @@ int main() {
         }
         cout << "size " + rangTitle << endl;
         cout << "time " + result<< endl;
+        cout << endl;
     }
 
     if(QUICKSORTMTSW) {
@@ -81,6 +82,7 @@ int main() {
         }
         cout << "size " + rangTitle << endl;
         cout << "time " + result<< endl;
+        cout << endl;
     }
 
     if(RADIXSORTSTSW) {
@@ -104,6 +106,7 @@ int main() {
         }
         cout << "size " + rangTitle << endl;
         cout << "time " + result<< endl;
+        cout << endl;
     }
 
     if(RADIXSORTMTSW) {
