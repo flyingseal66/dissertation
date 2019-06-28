@@ -2,31 +2,24 @@
 #include <ctime>
 #include <random>
 #include <thread>
-#include "quicksortShortSingle.h"
+#include<string>
+#include "quicksortSS.h"
+#include "quicksortMT.h"
+#include "RadixSortST.h"
+#include "RadixSortMT.h"
 
+// the scope of array length
 const int NMIN = 1000000;
-const int NMAX = 10000000;
-const int NAVG = 2;
+const int NMAX = 10000001;
+const int NAVG = 1;
+
+// Execution switcher
+const bool QUICKSORTSTSW = true;
+const bool QUICKSORTMTSW = true;
+const bool RADIXSORTSTSW = true;
+const bool RADIXSORTMTSW = true;
+
 using namespace std;
-
-int main() {
-    cout << "Program started!" << endl;
-
-    for (int i = NMIN; i < NMAX; i *= 10) {
-        int  *data = new int[i];
-        auto start = chrono::steady_clock::now(); // start time
-        quickSort(data, 0, i - 1);
-        auto end = chrono::steady_clock::now();
-        cout << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
-        for (int j = 1; j < i; j++) {
-            if (data[i] < data[i - 1]) {
-                std::cout << "Wrong order is found in Radix sort MSD:" << i << " " << data[i] << " " << data[i - 1] << std::endl;
-            }
-        }
-    }
-    return 0;
-}
-
 void initData(int *data, int size) {
     std::random_device rd;
     std::mt19937 mt(rd());
@@ -35,3 +28,107 @@ void initData(int *data, int size) {
         data[i] = dist(mt);
     }
 }
+
+void checkOrder(int *data, int i) {
+    for (int j = 1; j < i; j++) {
+        if (data[j] < data[j - 1]) {
+            std::cout << "Wrong order is found in Radix sort MSD:" << j << " " << data[j] << " " << data[j - 1] << std::endl;
+        }
+    }
+}
+int main() {
+    string result = "";
+    string rangTitle = "";
+    if (QUICKSORTSTSW) {
+        cout << "QuicksortST started!" << endl;
+        for (int i = NMIN; i < NMAX; i *= 10) {
+            rangTitle += to_string(i) + " ";
+            double totalTime = 0;
+            for (int j = 0; j < NAVG; ++j) {
+                int  *data = new int[i];
+                initData(data, i);
+                auto start = chrono::steady_clock::now(); // start time
+                quickSort(data, 0, i - 1);
+                auto end = chrono::steady_clock::now();
+                totalTime += chrono::duration <double, milli>(end - start).count();
+                //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
+                checkOrder(data, i);
+            }
+            result += to_string(totalTime/NAVG) + "ms ";
+        }
+        cout << "size " + rangTitle << endl;
+        cout << "time " + result<< endl;
+    }
+
+    if(QUICKSORTMTSW) {
+        cout << "QuicksortMT started!" << endl;
+        result = "";
+        rangTitle = "";
+        for (int i = NMIN; i < NMAX; i *= 10) {
+            rangTitle += to_string(i) + " ";
+            double totalTime = 0;
+            for (int j = 0; j < NAVG; ++j) {
+                int  *data = new int[i];
+                initData(data, i);
+                auto start = chrono::steady_clock::now(); // start time
+                quickSortMT(data, 0, i - 1);
+                auto end = chrono::steady_clock::now();
+                totalTime += chrono::duration <double, milli>(end - start).count();
+                //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
+                checkOrder(data, i);
+            }
+            result += to_string(totalTime/NAVG) + "ms ";
+        }
+        cout << "size " + rangTitle << endl;
+        cout << "time " + result<< endl;
+    }
+
+    if(RADIXSORTSTSW) {
+        cout << "RadixSortST started!" << endl;
+        result = "";
+        rangTitle = "";
+        for (int i = NMIN; i < NMAX; i *= 10) {
+            rangTitle += to_string(i) + " ";
+            double totalTime = 0;
+            for (int j = 0; j < NAVG; ++j) {
+                int  *data = new int[i];
+                initData(data, i);
+                auto start = chrono::steady_clock::now(); // start time
+                msdRadixSortS(data, i);
+                auto end = chrono::steady_clock::now();
+                totalTime += chrono::duration <double, milli>(end - start).count();
+                //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
+                checkOrder(data, i);
+            }
+            result += to_string(totalTime/NAVG) + "ms ";
+        }
+        cout << "size " + rangTitle << endl;
+        cout << "time " + result<< endl;
+    }
+
+    if(RADIXSORTMTSW) {
+        cout << "RadixSortMT started!" << endl;
+        result = "";
+        rangTitle = "";
+        for (int i = NMIN; i < NMAX; i *= 10) {
+            rangTitle += to_string(i) + " ";
+            double totalTime = 0;
+            for (int j = 0; j < NAVG; ++j) {
+                int  *data = new int[i];
+                initData(data, i);
+                auto start = chrono::steady_clock::now(); // start time
+                radixsortMT(data, i, 1);
+                auto end = chrono::steady_clock::now();
+                totalTime += chrono::duration <double, milli>(end - start).count();
+                //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
+                checkOrder(data, i);
+            }
+            result += to_string(totalTime/NAVG) + "ms ";
+        }
+        cout << "size " + rangTitle << endl;
+        cout << "time " + result<< endl;
+    }
+
+    return 0;
+}
+
