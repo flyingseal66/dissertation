@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+F:/projects/CLionProjects/dissertation/main.cpp
+iostream
+-
+ctime
+-
+quicksortShortSingle.h
+F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+
+F:/projects/CLionProjects/dissertation/quicksortShortSingle.cpp
+quicksortShortSingle.h
+F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+
+F:/projects/CLionProjects/dissertation/quicksortShortSingle.h
+
