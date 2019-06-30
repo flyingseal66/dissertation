@@ -58,23 +58,23 @@ include CMakeFiles\dissertation.dir\progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles\dissertation.dir\flags.make
 
-CMakeFiles\dissertation.dir\main.cpp.obj: CMakeFiles\dissertation.dir\flags.make
-CMakeFiles\dissertation.dir\main.cpp.obj: ..\main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dissertation.dir/main.cpp.obj"
+CMakeFiles\dissertation.dir\mainS.cpp.obj: CMakeFiles\dissertation.dir\flags.make
+CMakeFiles\dissertation.dir\mainS.cpp.obj: ..\mainS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dissertation.dir/mainS.cpp.obj"
 	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\dissertation.dir\main.cpp.obj /FdCMakeFiles\dissertation.dir\ /FS -c F:\projects\CLionProjects\dissertation\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\dissertation.dir\mainS.cpp.obj /FdCMakeFiles\dissertation.dir\ /FS -c F:\projects\CLionProjects\dissertation\mainS.cpp
 <<
 
-CMakeFiles\dissertation.dir\main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dissertation.dir/main.cpp.i"
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe > CMakeFiles\dissertation.dir\main.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\projects\CLionProjects\dissertation\main.cpp
+CMakeFiles\dissertation.dir\mainS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dissertation.dir/mainS.cpp.i"
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe > CMakeFiles\dissertation.dir\mainS.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\projects\CLionProjects\dissertation\mainS.cpp
 <<
 
-CMakeFiles\dissertation.dir\main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dissertation.dir/main.cpp.s"
+CMakeFiles\dissertation.dir\mainS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dissertation.dir/mainS.cpp.s"
 	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\dissertation.dir\main.cpp.s /c F:\projects\CLionProjects\dissertation\main.cpp
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\dissertation.dir\mainS.cpp.s /c F:\projects\CLionProjects\dissertation\mainS.cpp
 <<
 
 CMakeFiles\dissertation.dir\quicksortST.cpp.obj: CMakeFiles\dissertation.dir\flags.make
@@ -155,7 +155,7 @@ CMakeFiles\dissertation.dir\RadixSortMT.cpp.s: cmake_force
 
 # Object files for target dissertation
 dissertation_OBJECTS = \
-"CMakeFiles\dissertation.dir\main.cpp.obj" \
+"CMakeFiles\dissertation.dir\mainS.cpp.obj" \
 "CMakeFiles\dissertation.dir\quicksortST.cpp.obj" \
 "CMakeFiles\dissertation.dir\quicksortMT.cpp.obj" \
 "CMakeFiles\dissertation.dir\RadixSortST.cpp.obj" \
@@ -164,7 +164,7 @@ dissertation_OBJECTS = \
 # External object files for target dissertation
 dissertation_EXTERNAL_OBJECTS =
 
-dissertation.exe: CMakeFiles\dissertation.dir\main.cpp.obj
+dissertation.exe: CMakeFiles\dissertation.dir\mainS.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\quicksortST.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\quicksortMT.cpp.obj
 dissertation.exe: CMakeFiles\dissertation.dir\RadixSortST.cpp.obj

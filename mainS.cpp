@@ -14,11 +14,10 @@ const int NMAX = 10000001;
 const int NAVG = 1;
 
 // Execution switcher
-#define QUICKSORTSTSW;
-#define QUICKSORTMTSW;
-#define RADIXSORTSTSW;
-#define RADIXSORTMTSW;
-typeof unsigned long long UNIT64;
+#define QUICKSORTSTSW
+#define QUICKSORTMTSW
+#define RADIXSORTSTSW
+#define RADIXSORTMTSW
 
 using namespace std;
 void initData(int *data, int size) {
@@ -111,7 +110,7 @@ int main() {
     cout << endl;
     #endif
 
-    #ifdef RADIXSORTMTSW)
+    #ifdef RADIXSORTMTSW
     cout << "RadixSortMT started!" << endl;
     result = "";
     rangTitle = "";

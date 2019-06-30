@@ -6,7 +6,7 @@
 #define DISSERTATION_RADIXSORTMT_H
 void radixsortMT(int* mas, int n, int radix);
 
-class RadixSortMT {
+class RadixSortLMT {
 
 };
 

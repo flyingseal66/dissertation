@@ -50,25 +50,25 @@ The CXX compiler identification is MSVC, found in "F:/projects/CLionProjects/dis
 Determining if the C compiler works passed with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_589aa\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_589aa.dir\build.make /nologo -L                  CMakeFiles\cmTC_589aa.dir\build
-Building C object CMakeFiles/cmTC_589aa.dir/testCCompiler.c.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm30F2.tmp
+Run Build Command(s):nmake /nologo cmTC_1d8cc\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_1d8cc.dir\build.make /nologo -L                  CMakeFiles\cmTC_1d8cc.dir\build
+Building C object CMakeFiles/cmTC_1d8cc.dir/testCCompiler.c.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm66CC.tmp
 testCCompiler.c
-Linking C executable cmTC_589aa.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_589aa.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_589aa.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm3160.tmp
+Linking C executable cmTC_1d8cc.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1d8cc.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_1d8cc.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm6769.tmp
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_b9fd9\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_b9fd9.dir\build.make /nologo -L                  CMakeFiles\cmTC_b9fd9.dir\build
-Building C object CMakeFiles/cmTC_b9fd9.dir/CMakeCCompilerABI.c.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm3518.tmp
+Run Build Command(s):nmake /nologo cmTC_8a92c\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_8a92c.dir\build.make /nologo -L                  CMakeFiles\cmTC_8a92c.dir\build
+Building C object CMakeFiles/cmTC_8a92c.dir/CMakeCCompilerABI.c.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm6BBD.tmp
 CMakeCCompilerABI.c
-Linking C executable cmTC_b9fd9.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_b9fd9.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_b9fd9.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm3596.tmp
+Linking C executable cmTC_8a92c.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_8a92c.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_8a92c.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm6CA9.tmp
 
 
 
@@ -76,13 +76,13 @@ Linking C executable cmTC_b9fd9.exe
 Detecting C [] compiler features compiled with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_e1ef1\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_e1ef1.dir\build.make /nologo -L                  CMakeFiles\cmTC_e1ef1.dir\build
-Building C object CMakeFiles/cmTC_e1ef1.dir/feature_tests.c.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm3900.tmp
+Run Build Command(s):nmake /nologo cmTC_274bd\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_274bd.dir\build.make /nologo -L                  CMakeFiles\cmTC_274bd.dir\build
+Building C object CMakeFiles/cmTC_274bd.dir/feature_tests.c.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm7032.tmp
 feature_tests.c
-Linking C executable cmTC_e1ef1.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_e1ef1.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_e1ef1.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm396E.tmp
+Linking C executable cmTC_274bd.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_274bd.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_274bd.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm70B0.tmp
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -90,25 +90,25 @@ Linking C executable cmTC_e1ef1.exe
 Determining if the CXX compiler works passed with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_07601\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_07601.dir\build.make /nologo -L                  CMakeFiles\cmTC_07601.dir\build
-Building CXX object CMakeFiles/cmTC_07601.dir/testCXXCompiler.cxx.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm3D55.tmp
+Run Build Command(s):nmake /nologo cmTC_05c71\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_05c71.dir\build.make /nologo -L                  CMakeFiles\cmTC_05c71.dir\build
+Building CXX object CMakeFiles/cmTC_05c71.dir/testCXXCompiler.cxx.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm742A.tmp
 testCXXCompiler.cxx
-Linking CXX executable cmTC_07601.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_07601.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_07601.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm3DF3.tmp
+Linking CXX executable cmTC_05c71.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_05c71.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_05c71.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm74A8.tmp
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_40487\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_40487.dir\build.make /nologo -L                  CMakeFiles\cmTC_40487.dir\build
-Building CXX object CMakeFiles/cmTC_40487.dir/CMakeCXXCompilerABI.cpp.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm419B.tmp
+Run Build Command(s):nmake /nologo cmTC_05ea9\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_05ea9.dir\build.make /nologo -L                  CMakeFiles\cmTC_05ea9.dir\build
+Building CXX object CMakeFiles/cmTC_05ea9.dir/CMakeCXXCompilerABI.cpp.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm7831.tmp
 CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_40487.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_40487.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_40487.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm4219.tmp
+Linking CXX executable cmTC_05ea9.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_05ea9.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_05ea9.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm78BE.tmp
 
 
 
@@ -116,13 +116,13 @@ Linking CXX executable cmTC_40487.exe
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):nmake /nologo cmTC_37154\fast 
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_37154.dir\build.make /nologo -L                  CMakeFiles\cmTC_37154.dir\build
-Building CXX object CMakeFiles/cmTC_37154.dir/feature_tests.cxx.obj
-	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm45B2.tmp
+Run Build Command(s):nmake /nologo cmTC_b98be\fast 
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\nmake.exe -f CMakeFiles\cmTC_b98be.dir\build.make /nologo -L                  CMakeFiles\cmTC_b98be.dir\build
+Building CXX object CMakeFiles/cmTC_b98be.dir/feature_tests.cxx.obj
+	F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe @C:\Users\bubble\AppData\Local\Temp\nm7CA5.tmp
 feature_tests.cxx
-Linking CXX executable cmTC_37154.exe
-	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_37154.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_37154.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm4620.tmp
+Linking CXX executable cmTC_b98be.exe
+	"F:\program files\CLion\CLion 2019.1.4\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_b98be.dir --rc=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\8.1\bin\x86\mt.exe --manifests  -- F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_b98be.dir\objects1.rsp @C:\Users\bubble\AppData\Local\Temp\nm7D14.tmp
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers

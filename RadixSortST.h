@@ -2,13 +2,13 @@
 // Created by bubble on 2019/6/28.
 //
 
-#ifndef DISSERTATION_RADIXSORTST_H
+#ifndef DISSERTATION_RADIXSORTLST_H
 #define DISSERTATION_RADIXSORTST_H
 void msdRadixSortS(int* mas, int n);
 
-class RadixSortST {
+class RadixSortLST {
 
 };
 
 
-#endif //DISSERTATION_RADIXSORTST_H
+#endif //DISSERTATION_RADIXSORTLST_H

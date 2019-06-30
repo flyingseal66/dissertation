@@ -86,7 +86,6 @@ void countingSortSP(int* mas, int n, int radix) {
 
 
 void radixsortMT(int* mas, int n, int radix) {
-    int i;
     // thread container
     std::thread threads[256];
 

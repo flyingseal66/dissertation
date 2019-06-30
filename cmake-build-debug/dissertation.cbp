@@ -63,6 +63,52 @@
 					<DistClean command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="dissertation2">
+				<Option output="F:/projects/CLionProjects/dissertation/cmake-build-debug/dissertation2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/projects/CLionProjects/dissertation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="F:\Windows Kits\10\include\10.0.10240.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 dissertation2"/>
+					<CompileFile command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dissertation2/fast">
+				<Option output="F:/projects/CLionProjects/dissertation/cmake-build-debug/dissertation2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="F:/projects/CLionProjects/dissertation/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="F:\developSoftware\vs-community\community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="F:\Windows Kits\10\include\10.0.10240.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\8.1\include\\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 dissertation2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f F:\projects\CLionProjects\dissertation\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="F:/projects/CLionProjects/dissertation/cmake-build-debug"/>
 				<Option type="4"/>
@@ -84,6 +130,33 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/RadixSortLMT.cpp">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/RadixSortLMT.h">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/RadixSortLST.cpp">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/RadixSortLST.h">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/main.cpp">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/quicksortLMT.cpp">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/quicksortLMT.h">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/quicksortLST.cpp">
+			<Option target="dissertation2"/>
+		</Unit>
+		<Unit filename="F:/projects/CLionProjects/dissertation/Long/quicksortLST.h">
+			<Option target="dissertation2"/>
+		</Unit>
 		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortMT.cpp">
 			<Option target="dissertation"/>
 		</Unit>
@@ -96,7 +169,7 @@
 		<Unit filename="F:/projects/CLionProjects/dissertation/RadixSortST.h">
 			<Option target="dissertation"/>
 		</Unit>
-		<Unit filename="F:/projects/CLionProjects/dissertation/main.cpp">
+		<Unit filename="F:/projects/CLionProjects/dissertation/mainS.cpp">
 			<Option target="dissertation"/>
 		</Unit>
 		<Unit filename="F:/projects/CLionProjects/dissertation/quicksortMT.cpp">

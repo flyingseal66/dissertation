@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dissertation.dir/main.cpp.obj"
+  "CMakeFiles/dissertation.dir/mainS.cpp.obj"
   "CMakeFiles/dissertation.dir/quicksortST.cpp.obj"
   "CMakeFiles/dissertation.dir/quicksortMT.cpp.obj"
   "CMakeFiles/dissertation.dir/RadixSortST.cpp.obj"

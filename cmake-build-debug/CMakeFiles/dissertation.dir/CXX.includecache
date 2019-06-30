@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-F:/projects/CLionProjects/dissertation/RadixSortMT.cpp
-RadixSortMT.h
-F:/projects/CLionProjects/dissertation/RadixSortMT.h
-iostream
--
-thread
--
-math.h
--
-
 F:/projects/CLionProjects/dissertation/RadixSortMT.h
 
 F:/projects/CLionProjects/dissertation/RadixSortST.cpp
@@ -25,10 +15,12 @@ iostream
 -
 math.h
 -
+string.h
+-
 
 F:/projects/CLionProjects/dissertation/RadixSortST.h
 
-F:/projects/CLionProjects/dissertation/main.cpp
+F:/projects/CLionProjects/dissertation/mainS.cpp
 iostream
 -
 ctime
@@ -49,10 +41,6 @@ RadixSortMT.h
 F:/projects/CLionProjects/dissertation/RadixSortMT.h
 
 F:/projects/CLionProjects/dissertation/quicksortMT.h
-
-F:/projects/CLionProjects/dissertation/quicksortST.cpp
-quicksortST.h
-F:/projects/CLionProjects/dissertation/quicksortST.h
 
 F:/projects/CLionProjects/dissertation/quicksortST.h
 

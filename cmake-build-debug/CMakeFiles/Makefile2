@@ -103,6 +103,43 @@ clean: CMakeFiles\dissertation.dir\clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/dissertation2.dir
+
+# All Build rule for target.
+CMakeFiles\dissertation2.dir\all:
+	$(MAKE) -f CMakeFiles\dissertation2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation2.dir\depend
+	$(MAKE) -f CMakeFiles\dissertation2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation2.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10,11,12 "Built target dissertation2"
+.PHONY : CMakeFiles\dissertation2.dir\all
+
+# Include target in all.
+all: CMakeFiles\dissertation2.dir\all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\dissertation2.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles 6
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\dissertation2.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start F:\projects\CLionProjects\dissertation\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\dissertation2.dir\rule
+
+# Convenience name for target.
+dissertation2: CMakeFiles\dissertation2.dir\rule
+
+.PHONY : dissertation2
+
+# clean rule for target.
+CMakeFiles\dissertation2.dir\clean:
+	$(MAKE) -f CMakeFiles\dissertation2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\dissertation2.dir\clean
+.PHONY : CMakeFiles\dissertation2.dir\clean
+
+# clean rule for target.
+clean: CMakeFiles\dissertation2.dir\clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.
