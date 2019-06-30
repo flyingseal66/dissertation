@@ -1,3 +1,0 @@
-F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/dissertation.dir
-F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/edit_cache.dir
-F:/projects/CLionProjects/dissertation/cmake-build-debug/CMakeFiles/rebuild_cache.dir

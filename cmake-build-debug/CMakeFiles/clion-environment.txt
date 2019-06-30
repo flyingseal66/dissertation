@@ -1,4 +1,0 @@
-ToolSet: 15.0 (local)@F:\developSoftware\vs-community\community
-Options: 
-
-Options:
