@@ -204,7 +204,7 @@ void countingSort(UINT64* mas, size_t n, int radix) {
 
     //cout << "print:" << radix << endl;
     //printVector(mas, n);
-    //delete[]t_mas;
+    delete[]t_mas;
     //delete[]count;
 }
 
