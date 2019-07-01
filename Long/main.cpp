@@ -47,8 +47,8 @@ int main() {
     auto currentTime = std::chrono::system_clock::now();
     std::time_t c_time = std::chrono::system_clock::to_time_t(currentTime);
     cout << std::ctime(&c_time);
-    cout << "Google cloud instance, ubuntu 18.02, 64 bit, 16*8 cores" << endl;
-    cout << "NCPUS=16, RAM=20GB, Intel Haswell,cpu family:6, model:63, model name: Intel(R) Xeon(R) CPU @ 2.30GHz" << endl;
+    cout << "Google cloud instance, ubuntu 18.04, 64 bit, 16*8 cores" << endl;
+    cout << "NCPUS=16, RAM=60GB, Intel Haswell,cpu family:6, model:63, model name: Intel(R) Xeon(R) CPU @ 2.30GHz" << endl;
 
 
     // The test of Quicksort with a single thread
@@ -63,7 +63,11 @@ int main() {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
+            auto initStart = chrono::steady_clock::now(); // start time
             randUint(data, i); // initialise data
+            auto initEnd = chrono::steady_clock::now(); // start time
+            cout << "size " << i << ", initialization time " << chrono::duration <double, milli>(initEnd - initStart)
+                    .count()/1000 << "s" << endl;
             auto start = chrono::steady_clock::now(); // start time
             quickSortLST(data, 0, i - 1);
             auto end = chrono::steady_clock::now();
