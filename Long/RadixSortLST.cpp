@@ -147,7 +147,7 @@ void countingSort(UINT64* mas, size_t n, int radix) {
     }*/
 
     std::thread t4,t5,t6;
-    if (_counter < 8 && n>50000000)
+    if (_counter < 8 && n>50000000 && 1>2)
     {
         for (int j = 0; j < 2; j++)
         {
@@ -236,7 +236,7 @@ void msdRadixPass(UINT64* mas, size_t n, int radix) {
         }
     }
     if (flag) {
-        if (n > 500000000)
+        if (5000000000 < n)
         {
             t2 = std::thread(msdRadixPass, mas, n, radix - 1);
         }
@@ -244,7 +244,7 @@ void msdRadixPass(UINT64* mas, size_t n, int radix) {
 
     }
     else {
-        if (n - start> 7000000)
+        if (n - start> 7000000000)
         {
             t3 = std::thread(msdRadixPass, &mas[start], (n - start), radix - 1);
         }
