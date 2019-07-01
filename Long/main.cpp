@@ -73,7 +73,9 @@ int main() {
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
             cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
-            checkOrder(data, i, "QuicksortST");
+            if (j == 0) {
+                checkOrder(data, i, "QuicksortST");
+            }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
@@ -103,7 +105,9 @@ int main() {
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
             cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
-            checkOrder(data, i, "QuicksortMT");
+            if (j==0) {
+                checkOrder(data, i, "QuicksortMT");
+            }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
@@ -132,7 +136,10 @@ int main() {
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
             cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
-            checkOrder(data, i, "/*");
+            if (j==0) {
+                checkOrder(data, i, "RadixSortST");
+            }
+
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
@@ -161,7 +168,9 @@ int main() {
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
             cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
-            checkOrder(data, i, "RadixSortMT");
+            if (j==0) {
+                checkOrder(data, i, "RadixSortMT");
+            }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
