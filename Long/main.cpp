@@ -12,7 +12,7 @@
 const int NMIN = 1000000;
 const int NMAX = 1000000001;
 // the number of cycles
-const int NAVG = 4;
+const int NAVG = 2;
 
 // Execution switcher
 #define QUICKSORTSTSW
