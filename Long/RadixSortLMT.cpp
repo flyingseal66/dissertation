@@ -17,19 +17,13 @@ void printVectorSP(int* mas, int n) {
 
 // this method is used for get the value of radix position of a number, which can be 1 or 0
 int digitSP(UINT64 num, int radix) {
-    /*int t_num = 1;
-    for (int i = 0; i < radix; ++i) {
-        num = num >> 1;
-    }
-    num = num & t_num;*/
     return (long long)(num / pow(256, radix)) % 256;
 }
 
 // this method is used to get the number of each bucket
 void countDigitsSP(int* count, UINT64 * mas, int radix, int start, int end)
 {
-    for (int i = start; i < end; ++i)
-    {
+    for (int i = start; i < end; ++i) {
         ++count[digitSP(mas[i], radix) + 1];
     }
 }
@@ -84,15 +78,14 @@ void countingSortSP(UINT64 * mas, int n, int radix) {
 
 
 void msdRadixPassSP(UINT64 * mas, int n, int radix) {
-    // thread container
-    std::thread threads[256];
-
     if (n < 2) {
         return;
     }
     if (radix < 0) {
         return;
     }
+    // thread container
+    std::thread threads[256];
     countingSortSP(mas, n, radix);
     //printVector(mas, n);
     bool flag = true;

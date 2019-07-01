@@ -29,19 +29,13 @@ void printVector(UINT64* mas, int n) {
 
 // this method is used for get the value of radix position of a number, which can be 1 or 0
 int digit(UINT64 num, int radix) {
-    /*int t_num = 1;
-    for (int i = 0; i < radix; ++i) {
-        num = num >> 1;
-    }
-    num = num & t_num;*/
     return (long long)(num/pow(256, radix)) % 256;
 }
 
 // this method is used to get the number of each bucket
 void countDigits(int* count, UINT64* mas, int radix, int start, int end)
 {
-    for (int i = start; i < end; ++i)
-    {
+    for (int i = start; i < end; ++i) {
         ++count[digit(mas[i], radix) + 1];
     }
 }
@@ -231,7 +225,7 @@ void msdRadixPass(UINT64* mas, size_t n, int radix) {
     std::thread t3;
     for (int i = 0; i < (n - 1); ++i) {
         if (digit(mas[i], radix) != digit(mas[i + 1], radix)) {
-            if ((i - start +1) > 80000000) {
+            if ((i - start +1) > 8000000000) {
                 t1 = std::thread(msdRadixPass, &mas[start], (i - start + 1), radix - 1);
             }
             else { msdRadixPass(&mas[start], (i - start + 1), radix - 1); }
