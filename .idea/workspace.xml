@@ -13,10 +13,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f9f1c0f-8eb3-4fea-8c8d-48c1de22374f" name="Default Changelist" comment="0701">
-      <change afterPath="$PROJECT_DIR$/Long/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -212,7 +209,7 @@
       <updated>1561705385158</updated>
       <workItem from="1561705386463" duration="669000" />
       <workItem from="1561755977253" duration="23045000" />
-      <workItem from="1561938102618" duration="4453000" />
+      <workItem from="1561938102618" duration="4471000" />
     </task>
     <task id="LOCAL-00001" summary="add quicksortShortSingle file">
       <created>1561708772653</created>
@@ -295,7 +292,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38716000" />
+    <option name="totallyTimeSpent" value="38734000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
