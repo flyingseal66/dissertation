@@ -25,8 +25,8 @@ using namespace std;
 
 // generate an UINT64 array with a length of size
 void randUint(UINT64 *data, int size) {
-    UINT64 r = 1;
-    for (UINT64 k = 0; k < size; ++k) {
+    UINT64 r = 2;
+    for (UINT64 k = 0; k < size; k++) {
         r ^= r >> 12;        // a
         r ^= r << 25;        // b
         r ^= r >> 27;        // c
@@ -59,7 +59,7 @@ int main() {
     #ifdef QUICKSORTSTSW
     cout << "QuicksortST started!" << endl;
     result = "";
-    for (int i = NMIN; i < NMAX; i *= 10) {
+    for (UINT64 i = NMIN; i < NMAX; i *= 10) {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -95,7 +95,7 @@ int main() {
     cout << "QuicksortMT started!" << endl;
     result = "";
     rangTitle = "";
-    for (auto i = NMIN; i < NMAX; i *= 10) {
+    for (UINT64 i = NMIN; i < NMAX; i *= 10) {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {

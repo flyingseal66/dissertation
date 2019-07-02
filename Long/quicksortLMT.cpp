@@ -5,11 +5,11 @@
 #include "quicksortLMT.h"
 #include <thread>
 
-void quickSortLMT(UINT64 arr[], int left, int right) {
+void quickSortLMT(UINT64 arr[], UINT64 left, UINT64 right) {
     //cnt++;
     int i = left, j = right;
     UINT64 tmp;
-    UINT64 pivot = arr[(left + right) / 2];
+    UINT64 pivot = arr[right];
     /* partition */
     while (i <= j) {
         while (arr[i] < pivot) {

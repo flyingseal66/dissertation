@@ -5,7 +5,7 @@
 
 #ifndef DISSERTATION_QUICKSORTMT_H
 #define DISSERTATION_QUICKSORTMT_H
-void quickSortLMT(UINT64 arr[], int left, int right);
+void quickSortLMT(UINT64 arr[], UINT64 left, UINT64 right);
 
 
 #endif //DISSERTATION_QUICKSORTMT_H
