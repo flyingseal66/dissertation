@@ -3,14 +3,15 @@
 #include <random>
 #include <thread>
 #include <string>
+#include <windows.h>
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
 #include "RadixSortLMT.h"
 
 // the scope of array length
-const int NMIN = 1000000;
-const int NMAX = 1000000001;
+const int NMIN = 100000000;
+const int NMAX = 100000001;
 // the number of cycles
 const int NAVG = 2;
 
@@ -43,7 +44,12 @@ void checkOrder(UINT64 *data, int i, const string& sortType) {
     }
 }
 int main() {
-    // Test rand()
+    //cout << digit(10188706241164381559, 1) << endl;
+    //cout << digit(10188706241164383079 ,1) <<endl;
+    //Sleep(100000);
+
+
+
     auto currentTime = std::chrono::system_clock::now();
     std::time_t c_time = std::chrono::system_clock::to_time_t(currentTime);
     cout << std::ctime(&c_time);

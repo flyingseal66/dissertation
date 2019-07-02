@@ -60,7 +60,7 @@ void copyData(UINT64 *t_mas, UINT64 * mas, int start, int end)
 
 
 // sort the array for according to the radix position
-void countingSort(UINT64* mas, size_t n, int radix) {
+void countingSort(UINT64* mas, UINT64 n, int radix) {
     /*if(n == 2)
     {
         cout << "print:" << radix << endl;
@@ -68,7 +68,7 @@ void countingSort(UINT64* mas, size_t n, int radix) {
     }*/
 
     //if (n <= 2) return;
-    size_t i;
+    UINT64 i;
     int count[RANGE] = { 0 };
     int count0[RANGE] = { 0 };
     int count1[RANGE] = { 0 };
