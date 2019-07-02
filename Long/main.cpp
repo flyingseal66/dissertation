@@ -18,7 +18,7 @@ const int NAVG = 2;
 #define QUICKSORTSTSW
 #define QUICKSORTMTSW
 #define RADIXSORTSTSW
-//#define RADIXSORTMTSW
+#define RADIXSORTMTSW
 typedef unsigned long long UINT64;
 
 using namespace std;
