@@ -93,7 +93,7 @@ void msdRadixPassSP(UINT64 * mas, int n, int radix) {
     int tNumber = 0;
     for (int i = 0; i < (n - 1); ++i) {
         if (digitSP(mas[i], radix) != digitSP(mas[i + 1], radix)) {
-            if ((i-start) > 500000000 && tNumber < 256) {
+            if ((i-start) > 1000000 && tNumber < 256) {
                 threads[tNumber++] = thread(msdRadixPassSP, &mas[start], (i - start + 1), radix - 1);
             }else { msdRadixPassSP(&mas[start], (i - start + 1), radix - 1); }
             start = i + 1;
