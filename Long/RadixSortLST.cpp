@@ -186,10 +186,10 @@ void countingSort(UINT64* mas, size_t n, int radix) {
 
     }
     else {
-        /*for (i = 0; i < n; ++i) {
+        for (i = 0; i < n; ++i) {
             mas[i] = t_mas[i];
-        }*/
-        memcpy((void*)mas, (void*)t_mas, n * sizeof(UINT64));
+        }
+        //memcpy((void*)mas, (void*)t_mas, n * sizeof(UINT64));
     }
 
     //std::cout << "result:=" << _counter << std::endl;

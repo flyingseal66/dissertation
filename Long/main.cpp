@@ -15,10 +15,10 @@ const int NMAX = 1000000001;
 const int NAVG = 2;
 
 // Execution switcher
-#define QUICKSORTSTSW
-#define QUICKSORTMTSW
+//#define QUICKSORTSTSW
+//#define QUICKSORTMTSW
 #define RADIXSORTSTSW
-#define RADIXSORTMTSW
+//#define RADIXSORTMTSW
 typedef unsigned long long UINT64;
 
 using namespace std;
