@@ -24,7 +24,7 @@ typedef unsigned long long UINT64;
 using namespace std;
 
 // generate an UINT64 array with a length of size
-void randUint(UINT64 *data, int size) {
+void randUint(UINT64 *data, UINT64 size) {
     UINT64 r = 2;
     for (UINT64 k = 0; k < size; k++) {
         r ^= r >> 12;        // a
@@ -33,6 +33,24 @@ void randUint(UINT64 *data, int size) {
         data[k] = r;
     }
 }
+
+void rand64Bit(UINT64 *data, UINT64 size) {
+    std::random_device rd;     //Get a random seed from the OS entropy device, or whatever
+    std::mt19937_64 eng(rd()); //Use the 64-bit Mersenne Twister 19937 generator
+    //and seed it with entropy.
+
+    //Define the distribution, by default it goes from 0 to MAX(unsigned long long)
+    //or what have you.
+    std::uniform_int_distribution<unsigned long long> distr;
+
+    //Generate random numbers
+    for(int n=0; n<size; n++) {
+        data[n] = distr(eng);
+        std::cout << distr(eng) << ' ';
+    }
+
+}
+
 
 // check the sorted array of data to see if there are numbers in wrong order
 void checkOrder(UINT64 *data, UINT64 i, const string& sortType) {
@@ -48,7 +66,6 @@ int main() {
     //Sleep(100000);
 
 
-
     auto currentTime = std::chrono::system_clock::now();
     std::time_t c_time = std::chrono::system_clock::to_time_t(currentTime);
     cout << std::ctime(&c_time);
@@ -61,6 +78,7 @@ int main() {
     string rangTitle;
     double totalTime;
     auto  *data = new UINT64[NMAX];
+
     #ifdef QUICKSORTSTSW
     cout << "QuicksortST started!" << endl;
     result = "";
@@ -137,7 +155,7 @@ int main() {
         for (int j = 0; j < NAVG; ++j) {
             randUint(data, i);
             auto start = chrono::steady_clock::now(); // start time
-            msdRadixSort(data, i);
+            rand64Bit(data, i);
             auto end = chrono::steady_clock::now();
             double middleTime = chrono::duration <double, milli>(end - start).count()/1000;
             totalTime += middleTime;

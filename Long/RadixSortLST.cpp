@@ -16,7 +16,6 @@
 
 using namespace std;
 const int RANGE = 257;
-int THREAD_NUMBER = 2;
 
 atomic<int> _counter(0);  //使用原子变量
 
@@ -105,8 +104,8 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
     /*for (i = 0; i < n; ++i) {
         ++count[digit(mas[i], radix) + 1];
     }*/
-    for (i = 1; i < RANGE; ++i) {
-        count[i] += count[i - 1];
+    for (int m = 1; m < RANGE; ++m) {
+        count[m] += count[m - 1];
     }
 
     // confirm the start of each position
