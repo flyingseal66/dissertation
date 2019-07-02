@@ -3,7 +3,6 @@
 #include <random>
 #include <thread>
 #include <string>
-#include <windows.h>
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
