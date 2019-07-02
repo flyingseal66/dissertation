@@ -9,7 +9,7 @@
 #include "RadixSortLMT.h"
 
 // the scope of array length
-const int NMIN = 100000000;
+const int NMIN = 60000000;
 const int NMAX = 100000001;
 // the number of cycles
 const int NAVG = 2;
@@ -35,8 +35,8 @@ void randUint(UINT64 *data, int size) {
 }
 
 // check the sorted array of data to see if there are numbers in wrong order
-void checkOrder(UINT64 *data, int i, const string& sortType) {
-    for (int j = 1; j < i; j++) {
+void checkOrder(UINT64 *data, UINT64 i, const string& sortType) {
+    for (UINT64 j = 1; j < i; j++) {
         if (data[j] < data[j - 1]) {
             std::cout << "Wrong order is found in " << sortType << ": " << j << " " << data[j] << " " << data[j - 1] << std::endl;
         }
