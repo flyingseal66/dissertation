@@ -46,7 +46,7 @@ void rand64Bit(UINT64 *data, UINT64 size) {
     //Generate random numbers
     for(int n=0; n<size; n++) {
         data[n] = distr(eng);
-        std::cout << distr(eng) << ' ';
+        // std::cout << distr(eng) << ' ';
     }
 
 }
