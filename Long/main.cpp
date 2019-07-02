@@ -9,8 +9,8 @@
 #include "RadixSortLMT.h"
 
 // the scope of array length
-const int NMIN = 60000000;
-const int NMAX = 100000001;
+const int NMIN = 10000000;
+const int NMAX = 1000000001;
 // the number of cycles
 const int NAVG = 2;
 
@@ -153,9 +153,9 @@ int main() {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
-            randUint(data, i);
-            auto start = chrono::steady_clock::now(); // start time
             rand64Bit(data, i);
+            auto start = chrono::steady_clock::now(); // start time
+            msdRadixSort(data, i);
             auto end = chrono::steady_clock::now();
             double middleTime = chrono::duration <double, milli>(end - start).count()/1000;
             totalTime += middleTime;
