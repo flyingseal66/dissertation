@@ -63,7 +63,10 @@ void countingSortS(int* mas, size_t n, int radix) {
     for (i = 0; i < n; ++i) {
         t_mas[count[digitS(mas[i], radix)]++] = mas[i];
     }
-    memcpy((void*)mas, (void*)t_mas, n * sizeof(int));
+    for (int j = 0; j < n; ++j) {
+        mas[j] = t_mas[j];
+    }
+    // memcpy((void*)mas, (void*)t_mas, n * sizeof(int));
 
 
     //std::copy(t_mas, t_mas+n, mas);
