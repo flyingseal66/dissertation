@@ -15,7 +15,7 @@
 
 
 using namespace std;
-const size_t RANGE = 257;
+const int RANGE = 257;
 int THREAD_NUMBER = 2;
 
 atomic<int> _counter(0);  //使用原子变量
@@ -123,7 +123,7 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
         count1[i] += count0[i];
     }*/
 
-    UINT64 *t_mas = new UINT64[n];
+    auto *t_mas = new UINT64[n];
     /*for (i = 0; i < THREAD_NUMBER; ++i)
     {
         if (i == 0)
@@ -209,14 +209,14 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
 }
 
 
-void msdRadixPass(UINT64* mas, size_t n, int radix) {
+void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
     if (radix < 0) {
         return;
     }
     countingSort(mas, n, radix);
     //printVector(mas, n);
     bool flag = true;
-    int start = 0;
+    UINT64 start = 0;
     std::thread t1;
     std::thread t2;
     std::thread t3;
@@ -259,6 +259,6 @@ void msdRadixPass(UINT64* mas, size_t n, int radix) {
     }
 }
 
-void msdRadixSort(UINT64 * mas, int n) {
+void msdRadixSort(UINT64 * mas, UINT64 n) {
     msdRadixPass(mas, n, 7);
 }
