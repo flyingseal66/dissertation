@@ -50,7 +50,7 @@ void moveData(UINT64 *t_mas, int* count, UINT64* mas, int start, int end, int t_
 }
 
 // copy data from temp to result
-void copyData(UINT64 *t_mas, UINT64 * mas, int start, int end)
+void copyData(const UINT64 *t_mas, UINT64 * mas, int start, int end)
 {
     for (int i = start; i< end; i ++)
     {
@@ -61,20 +61,12 @@ void copyData(UINT64 *t_mas, UINT64 * mas, int start, int end)
 
 // sort the array for according to the radix position
 void countingSort(UINT64* mas, UINT64 n, int radix) {
-    /*if(n == 2)
-    {
-        cout << "print:" << radix << endl;
-        printVector(mas, n);
-    }*/
-
     //if (n <= 2) return;
     UINT64 i;
     int count[RANGE] = { 0 };
     int count0[RANGE] = { 0 };
     int count1[RANGE] = { 0 };
     int startPos[RANGE] = { 0 };
-
-    int average = n / THREAD_NUMBER;
     thread t0, t1;
     /*if (n > 400000000) {
         for (i = 0; i < THREAD_NUMBER; ++i)
@@ -141,13 +133,13 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
         t_mas[count[digit(mas[i], radix)]++] = mas[i];
     }
 
-    // copy data in parallel
-    /*for (i = 0; i < n; ++i) {
+    for (i = 0; i < n; i++) {
         mas[i] = t_mas[i];
-    }*/
+    }
 
+    // copy data in parallel
     std::thread t4,t5,t6;
-    if (_counter < 8 && n>500000000 && 1>2)
+    /*if (_counter < 8 && n>500000000 && 1>2)
     {
         for (int j = 0; j < 2; j++)
         {
@@ -164,14 +156,14 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
                 copyData(t_mas, mas, j*n / 2, n);
                 //	cout << 2 << endl;
             }
-            /*if (j == 2)
+            *//*if (j == 2)
             {
                 t6 = std::thread(copyData, t_mas, mas, j*n / 3, n);
-            }*/
-            /*if (j == 2)
+            }*//*
+            *//*if (j == 2)
             {
                 t6 = std::thread(copyData, t_mas, mas, j*n / 3, n);
-            }*/
+            }*//*
         }
         if (t4.joinable()) {
             t4.join();
@@ -180,9 +172,9 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
         //	if (t5.joinable()) {
         //	t5.join();
         //}
-        /*if (t6.joinable()) {
+        *//*if (t6.joinable()) {
             t6.join();
-        }*/
+        }*//*
 
     }
     else {
@@ -190,7 +182,7 @@ void countingSort(UINT64* mas, UINT64 n, int radix) {
             mas[i] = t_mas[i];
         }
         //memcpy((void*)mas, (void*)t_mas, n * sizeof(UINT64));
-    }
+    }*/
 
     //std::cout << "result:=" << _counter << std::endl;
 
@@ -233,7 +225,7 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
         }
     }
     if (flag) {
-        if (5000000000 < n)
+        if (50000000000 < n)
         {
             t2 = std::thread(msdRadixPass, mas, n, radix - 1);
         }
