@@ -5,7 +5,7 @@
 
 #ifndef DISSERTATION_RADIXSORTST_H
 #define DISSERTATION_RADIXSORTLST_H
-void msdRadixSort(UINT64 * mas, int n);
+void msdRadixSort(UINT64 * mas, UINT64 n);
 
 
 #endif //DISSERTATION_RADIXSORTST_H
