@@ -90,7 +90,7 @@ int main() {
             auto initStart = chrono::steady_clock::now(); // start time
             randUint(data, i); // initialise data
             auto initEnd = chrono::steady_clock::now(); // start time
-            cout << "size " << i << ", initialization time " << chrono::duration <double, milli>(initEnd - initStart)
+            cout << "size: " << i << ", initialization time " << chrono::duration <double, milli>(initEnd - initStart)
                     .count()/1000 << "s" << endl;
             auto start = chrono::steady_clock::now(); // start time
             quickSortLST(data, 0, i - 1);
@@ -109,8 +109,6 @@ int main() {
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
         cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
-    cout << "size " + rangTitle << endl;
-    cout << "time " + result + "s" << endl;
     cout << endl;
     #endif
 
@@ -142,8 +140,6 @@ int main() {
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
         cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
-    cout << "size " + rangTitle << endl;
-    cout << "time " + result + "s" << endl;
     cout << endl;
     #endif
 
@@ -176,8 +172,6 @@ int main() {
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
         cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
-/*    cout << "size " + rangTitle << endl;
-    cout << "time " + result + "s" << endl;*/
     cout << endl;
     #endif
 
@@ -209,8 +203,6 @@ int main() {
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
         cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
-    cout << "size " + rangTitle << endl;
-    cout << "time " + result + "s"<< endl;
     cout << endl;
     #endif
 
