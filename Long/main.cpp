@@ -9,16 +9,16 @@
 #include "RadixSortLMT.h"
 
 // the scope of array length
-const int NMIN = 10000000;
+const int NMIN = 1000000;
 const int NMAX = 1000000001;
 // the number of cycles
 const int NAVG = 2;
 
 // Execution switcher
-//#define QUICKSORTSTSW
-//#define QUICKSORTMTSW
+#define QUICKSORTSTSW
+#define QUICKSORTMTSW
 #define RADIXSORTSTSW
-//#define RADIXSORTMTSW
+#define RADIXSORTMTSW
 typedef unsigned long long UINT64;
 
 using namespace std;
@@ -83,6 +83,7 @@ int main() {
     cout << "QuicksortST started!" << endl;
     result = "";
     for (UINT64 i = NMIN; i < NMAX; i *= 10) {
+        string eachSize = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -99,14 +100,14 @@ int main() {
             //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
-            cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
+            eachSize += eachTime;
             if (j == 0) {
                 checkOrder(data, i, "QuicksortST");
             }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
-
+        cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
     cout << "size " + rangTitle << endl;
     cout << "time " + result + "s" << endl;
@@ -119,6 +120,7 @@ int main() {
     result = "";
     rangTitle = "";
     for (UINT64 i = NMIN; i < NMAX; i *= 10) {
+        string eachSize = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -131,13 +133,14 @@ int main() {
             //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
-            cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
+            eachSize += eachTime;
             if (j==0) {
                 checkOrder(data, i, "QuicksortMT");
             }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
+        cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
     cout << "size " + rangTitle << endl;
     cout << "time " + result + "s" << endl;
@@ -150,6 +153,7 @@ int main() {
     result = "";
     rangTitle = "";
     for (auto i = NMIN; i < NMAX; i *= 10) {
+        string eachSize = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -162,7 +166,7 @@ int main() {
             //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
-            cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
+            eachSize += eachTime;
             if (j==0) {
                 checkOrder(data, i, "RadixSortST");
             }
@@ -170,9 +174,10 @@ int main() {
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
+        cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
-    cout << "size " + rangTitle << endl;
-    cout << "time " + result + "s" << endl;
+/*    cout << "size " + rangTitle << endl;
+    cout << "time " + result + "s" << endl;*/
     cout << endl;
     #endif
 
@@ -182,6 +187,7 @@ int main() {
     result = "";
     rangTitle = "";
     for (auto i = NMIN; i < NMAX; i *= 10) {
+        string eachSize = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (auto j = 0; j < NAVG; ++j) {
@@ -194,13 +200,14 @@ int main() {
             //cout <<"Array size " << i << ", Time " << chrono::duration <double, milli>(end - start).count() << " ms" << endl;
             string strTime = to_string(middleTime);
             string eachTime = strTime.substr(0,strTime.find(".")+4) + " ";
-            cout << "length " << i << ", " << "Round" << j+1 << " " << eachTime << endl;
+            eachSize += eachTime;
             if (j==0) {
                 checkOrder(data, i, "RadixSortMT");
             }
         }
         string totalTimeStr = to_string(totalTime/NAVG);
         result += totalTimeStr.substr(0,totalTimeStr.find(".")+4) + " " ;
+        cout << "size: " << i << " " << eachSize << "avg=" << result << endl;
     }
     cout << "size " + rangTitle << endl;
     cout << "time " + result + "s"<< endl;
