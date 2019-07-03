@@ -3,6 +3,7 @@
 #include <random>
 #include <thread>
 #include <string>
+#include "Windows.h"
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
@@ -61,6 +62,16 @@ void checkOrder(UINT64 *data, UINT64 i, const string& sortType) {
     }
 }
 int main() {
+    /*auto testStart = chrono::steady_clock::now(); // start time
+    for (int k = 0; k < 100000000; ++k) {
+        digit(10188706241164381559, 0);
+
+        //Sleep(100000);
+    }
+    auto testEnd = chrono::steady_clock::now(); // start time
+    cout <<"ini time " << chrono::duration <double, milli>(testEnd - testStart)
+   */                                                              .count()/1000 << "s" << endl;
+
     //cout << digit(10188706241164381559, 1) << endl;
     //cout << digit(10188706241164383079 ,1) <<endl;
     //Sleep(100000);
@@ -155,7 +166,7 @@ int main() {
         for (int j = 0; j < NAVG; ++j) {
             rand64Bit(data, i);
             auto start = chrono::steady_clock::now(); // start time
-            msdRadixSort(data, i);
+            randUint(data, i);
             auto end = chrono::steady_clock::now();
             double middleTime = chrono::duration <double, milli>(end - start).count()/1000;
             totalTime += middleTime;

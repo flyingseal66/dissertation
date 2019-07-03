@@ -28,7 +28,18 @@ void printVector(UINT64* mas, int n) {
 
 // this method is used for get the value of radix position of a number, which can be 1 or 0
 int digit(UINT64 num, int radix) {
-    return (long long)(num/pow(256, radix)) % 256;
+    UINT64 t_num = 255;
+    for(int i = 0; i < radix; ++i) {
+        t_num = t_num << 8;
+    }
+    num = num & t_num;
+    if(num != 0) {
+        for(int i = 0; i < radix; ++i) {
+            num = num >> 8;
+        }
+    }
+    return num;
+    //return (long long)(num/pow(256, radix)) % 256;
 }
 
 // this method is used to get the number of each bucket
