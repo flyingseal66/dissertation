@@ -3,7 +3,6 @@
 #include <random>
 #include <thread>
 #include <string>
-#include "Windows.h"
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
@@ -69,8 +68,7 @@ int main() {
         //Sleep(100000);
     }
     auto testEnd = chrono::steady_clock::now(); // start time
-    cout <<"ini time " << chrono::duration <double, milli>(testEnd - testStart)
-   */                                                              .count()/1000 << "s" << endl;
+    cout <<"ini time " << chrono::duration <double, milli>(testEnd - testStart).count()/1000 << "s" << endl;
 
     //cout << digit(10188706241164381559, 1) << endl;
     //cout << digit(10188706241164383079 ,1) <<endl;
