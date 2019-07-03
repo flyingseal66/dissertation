@@ -73,7 +73,7 @@ int main() {
     //cout << digit(10188706241164381559, 1) << endl;
     //cout << digit(10188706241164383079 ,1) <<endl;
     //Sleep(100000);
-
+*/
 
     auto currentTime = std::chrono::system_clock::now();
     std::time_t c_time = std::chrono::system_clock::to_time_t(currentTime);
