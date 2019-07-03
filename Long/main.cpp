@@ -81,9 +81,9 @@ int main() {
 
     #ifdef QUICKSORTSTSW
     cout << "QuicksortST started!" << endl;
-    result = "";
     for (UINT64 i = NMIN; i < NMAX; i *= 10) {
         string eachSize = "";
+        result = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -117,10 +117,10 @@ int main() {
     // The test of Quicksort with multiple threads
     #ifdef QUICKSORTMTSW
     cout << "QuicksortMT started!" << endl;
-    result = "";
     rangTitle = "";
     for (UINT64 i = NMIN; i < NMAX; i *= 10) {
         string eachSize = "";
+        result = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -150,10 +150,10 @@ int main() {
     // the test of radix sort with a single thread
     #ifdef RADIXSORTSTSW
     cout << "RadixSortST started!" << endl;
-    result = "";
     rangTitle = "";
     for (auto i = NMIN; i < NMAX; i *= 10) {
         string eachSize = "";
+        result = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
@@ -184,10 +184,10 @@ int main() {
     // the test of Quicksort with multiple threads
     #ifdef RADIXSORTMTSW
     cout << "RadixSortMT started!" << endl;
-    result = "";
     rangTitle = "";
     for (auto i = NMIN; i < NMAX; i *= 10) {
         string eachSize = "";
+        result = "";
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (auto j = 0; j < NAVG; ++j) {
