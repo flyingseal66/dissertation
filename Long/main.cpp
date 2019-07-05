@@ -62,7 +62,7 @@ void checkOrder(UINT64 *data, UINT64 i, const string& sortType) {
 }
 int main() {
     auto testStart = chrono::steady_clock::now(); // start time
-    for (int k = 0; k < 100000000; ++k) {
+    for (int k = 0; k < 1; ++k) {
         cout << digit(5542065385077511953, 0) <<endl;
         cout << digit(5542065385077511967, 0) << endl;
         //Sleep(100000);
