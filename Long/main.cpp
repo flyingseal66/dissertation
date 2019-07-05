@@ -65,7 +65,7 @@ int main() {
     for (int k = 0; k < 100000000; ++k) {
         cout << digit(5542065385077511953, 0) <<endl;
         cout << digit(5542065385077511967, 0) << endl;
-        Sleep(100000);
+        //Sleep(100000);
     }
     /*auto testEnd = chrono::steady_clock::now(); // start time
     cout <<"ini time " << chrono::duration <double, milli>(testEnd - testStart).count()/1000 << "s" << endl;
