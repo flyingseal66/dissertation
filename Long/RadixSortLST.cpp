@@ -81,7 +81,7 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
     //printVector(mas, n);
     //bool flag = true;
     UINT64 start = 0;
-    for (UINT64 j = 0; j < RANGE; j++) {
+    for (int j = 0; j < RANGE; j++) {
         //cout<< "j: " << j<<endl ;
         UINT64 diff = 0;
         if (j > 0) {
@@ -92,7 +92,12 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
         //if (j != 0 && diff == 0) return;
         if (((j == 0 && buckets[0] > 1) || diff > 0)) {
             //cout << "diff " << diff <<endl;
-            msdRadixPass(&mas[start], diff, radix - 1);
+            if(j==0) {
+                msdRadixPass(&mas[start], buckets[0], radix - 1);
+            } else {
+                msdRadixPass(&mas[start], diff, radix - 1);
+            }
+
             start = buckets[j];
             //cout << "start " << start << " radix " << radix - 1 << "diff" << diff << endl;
         }
