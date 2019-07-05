@@ -73,7 +73,7 @@ void countingSort(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
 // sort the array by radix
 void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
     if (n<2) return;
-    if (radix <= 0) {
+    if (radix < 0) {
         return;
     }
     auto *buckets = new UINT64[RANGE]();
