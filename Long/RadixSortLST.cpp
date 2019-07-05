@@ -29,7 +29,7 @@ void printVector(UINT64 * mas, int n) {
 }
 
 // this method is used for get the value of radix position of a number, which can be 0-255
-UINT64 digit(UINT64 num, int radix) {
+int digit(UINT64 num, int radix) {
     UINT64 t_num = 255;
     if(num != 0) {
         for(int i = 0; i < radix; i++) {
@@ -50,7 +50,7 @@ void countingSort(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
         ++count[digit(mas[i], radix)+1];
     }
     bucks[0] = count[0];
-    for (UINT64 m = 1; m < RANGE; ++m) {
+    for (int m = 1; m < RANGE; ++m) {
         count[m] += count[m - 1];
         bucks[m] = count[m];
         //cout << "m" << m << buckets[i] << endl;
@@ -90,7 +90,7 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
 
         }
         //if (j != 0 && diff == 0) return;
-        if (((j == 0 && buckets[0] > 1) || diff > 1)) {
+        if (((j == 0 && buckets[0] > 1) || diff > 0)) {
             //cout << "diff " << diff <<endl;
             msdRadixPass(&mas[start], diff, radix - 1);
             start = buckets[j];
