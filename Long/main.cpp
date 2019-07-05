@@ -3,6 +3,7 @@
 #include <random>
 #include <thread>
 #include <string>
+#include "windows.h"
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
@@ -12,11 +13,11 @@
 const int NMIN = 1000000;
 const int NMAX = 1000000001;
 // the number of cycles
-const int NAVG = 2;
+const int NAVG = 1;
 
 // Execution switcher
-#define QUICKSORTSTSW
-#define QUICKSORTMTSW
+//#define QUICKSORTSTSW
+//#define QUICKSORTMTSW
 #define RADIXSORTSTSW
 #define RADIXSORTMTSW
 typedef unsigned long long UINT64;
@@ -162,7 +163,7 @@ int main() {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
-            randUint(data, i);
+            rand64Bit(data, i);
             auto start = chrono::steady_clock::now(); // start time
             msdRadixSort(data, i);
             auto end = chrono::steady_clock::now();
