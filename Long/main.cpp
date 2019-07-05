@@ -162,7 +162,7 @@ int main() {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (int j = 0; j < NAVG; ++j) {
-            randUint(data, i);
+            rand64Bit(data, i);
             auto start = chrono::steady_clock::now(); // start time
             msdRadixSort(data, i);
             auto end = chrono::steady_clock::now();
