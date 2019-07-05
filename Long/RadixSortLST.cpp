@@ -94,11 +94,13 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
             //cout << "diff " << diff <<endl;
             if(j==0) {
                 msdRadixPass(&mas[start], buckets[0], radix - 1);
+                start = buckets[0];
             } else {
                 msdRadixPass(&mas[start], diff, radix - 1);
+                start = buckets[j];
             }
 
-            start = buckets[j];
+
             //cout << "start " << start << " radix " << radix - 1 << "diff" << diff << endl;
         }
 
