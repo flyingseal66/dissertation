@@ -55,8 +55,7 @@ void countingSortMT(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
     }
     delete[]t_mas;
 }
-std::thread threads[RANGE];
-int tNumber = 0;
+
 // sort the array by radix
 void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
     if (n<2) return;
@@ -66,10 +65,11 @@ void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
     auto *buckets = new UINT64[RANGE]();
     countingSortMT(mas, n, radix, buckets);
     UINT64 start = 0;
-
+    std::thread threads[RANGE];
+    int tNumber = 0;
     // go through each bucket
     // thread container
-
+    std::thread t1;
     for (int j = 0; j < RANGE; j++) {
 
         UINT64 diff = 0;
@@ -87,15 +87,18 @@ void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
                 msdRadixPassMT(&mas[start], buckets[0], radix - 1);
                 start = buckets[0];
             } else {
-                if (diff > 100000 && tNumber<RANGE) {
-                    threads[tNumber++] = std::thread(msdRadixPassMT, &mas[start], diff, radix - 1);
+                if (diff > 10000 && tNumber<RANGE) {
+                    //cout << "enter new thread" << tNumber++ <<endl;
+                    threads[tNumber++] = thread(msdRadixPassMT, &mas[start], diff, radix - 1);
                 } else {
                     msdRadixPassMT(&mas[start], diff, radix - 1);
                 }
                 start = buckets[j];
             }
+
         }
     }
+    //if (t1.joinable()) t1.join();
     for (int i = 0; i < tNumber; i++) {
         if (threads[i].joinable()) {
             threads[i].join();
