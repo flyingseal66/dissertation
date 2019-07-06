@@ -6,7 +6,7 @@
 #include "quicksortLST.h"
 #include "quicksortLMT.h"
 #include "RadixSortLST.h"
-#include "RadixSortLMT.h"
+#include "RadixSortLMT2.h"
 
 // the scope of array length
 const int NMIN = 1000000;
@@ -46,7 +46,6 @@ void rand64Bit(UINT64 *data, UINT64 size) {
     //Generate random numbers
     for(int n=0; n<size; n++) {
         data[n] = distr(eng);
-        // std::cout << distr(eng) << ' ';
     }
 
 }
@@ -61,20 +60,7 @@ void checkOrder(UINT64 *data, UINT64 i, const string& sortType) {
     }
 }
 int main() {
-    auto testStart = chrono::steady_clock::now(); // start time
-    for (int k = 0; k < 1; ++k) {
-        cout << digit(5542065385077511953, 0) <<endl;
-        cout << digit(5542065385077511967, 0) << endl;
-        //Sleep(100000);
-    }
-    /*auto testEnd = chrono::steady_clock::now(); // start time
-    cout <<"ini time " << chrono::duration <double, milli>(testEnd - testStart).count()/1000 << "s" << endl;
-
-    //cout << digit(10188706241164381559, 1) << endl;
-    //cout << digit(10188706241164383079 ,1) <<endl;
-    //Sleep(100000);
-*/
-
+    // init clock
     auto currentTime = std::chrono::system_clock::now();
     std::time_t c_time = std::chrono::system_clock::to_time_t(currentTime);
     cout << std::ctime(&c_time);
@@ -194,9 +180,9 @@ int main() {
         totalTime = 0;
         rangTitle += to_string(i) + " ";
         for (auto j = 0; j < NAVG; ++j) {
-            randUint(data, i);
+            rand64Bit(data, i);
             auto start = chrono::steady_clock::now(); // start time
-            msdRadixSortLMT(data, i);
+            msdRadixSortMT(data, i);
             auto end = chrono::steady_clock::now();
             double middleTime = chrono::duration <double, milli>(end - start).count()/1000;
             totalTime += middleTime;

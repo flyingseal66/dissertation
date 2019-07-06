@@ -16,17 +16,8 @@
 using namespace std;
 const UINT64 RANGE = 257;
 
-// print array
-void printVector(UINT64 * mas, int n) {
-    for (int i = 0; i < n; ++i) {
-        cout << mas[i] << " ";
-    }
-    printf("\n");
-    cout << "end print" << endl;
-}
-
 // this method is used for get the value of radix position of a number, which can be 0-255
-int digit(UINT64 num, int radix) {
+int digitMT(UINT64 num, int radix) {
     UINT64 t_num = 255;
     if(num != 0) {
         for(int i = 0; i < radix; i++) {
@@ -37,14 +28,14 @@ int digit(UINT64 num, int radix) {
 }
 
 // sort the array for according to the radix position
-void countingSort(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
+void countingSortMT(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
     //if (n <= 2) return;
     UINT64 i;
     UINT64 count[RANGE] = { 0 };
 
     // count the number of each bucket
     for (i = 0; i < n; ++i) {
-        ++count[digit(mas[i], radix)+1];
+        ++count[digitMT(mas[i], radix)+1];
     }
     bucks[0] = count[0];
     for (int m = 1; m < RANGE; ++m) {
@@ -55,7 +46,7 @@ void countingSort(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
     // sorted temp array
     auto *t_mas = new UINT64[n];
     for (i = 0; i < n; ++i) {
-        t_mas[count[digit(mas[i], radix)]++] = mas[i];
+        t_mas[count[digitMT(mas[i], radix)]++] = mas[i];
     }
 
     // copy element from temp array to target array
@@ -64,18 +55,23 @@ void countingSort(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
     }
     delete[]t_mas;
 }
-
+std::thread threads[RANGE];
+int tNumber = 0;
 // sort the array by radix
-void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
+void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
     if (n<2) return;
     if (radix < 0) return;
 
-    // These buckets contains the number of each bucket
+    // These buckets contains the number of each digit
     auto *buckets = new UINT64[RANGE]();
-    countingSort(mas, n, radix, buckets);
+    countingSortMT(mas, n, radix, buckets);
     UINT64 start = 0;
+
     // go through each bucket
+    // thread container
+
     for (int j = 0; j < RANGE; j++) {
+
         UINT64 diff = 0;
         if (j > 0) {
             diff = buckets[j] - buckets[j-1];
@@ -83,17 +79,31 @@ void msdRadixPass(UINT64* mas, UINT64 n, int radix) {
         }
         if (((j == 0 && buckets[0] > 1) || diff > 0)) {
             if(j==0) {
-                msdRadixPass(&mas[start], buckets[0], radix - 1);
+                /*if (buckets[0] > 50000 && tNumber<200) {
+                    threads[tNumber++] = std::thread(msdRadixPassMT, &mas[start], buckets[0], radix - 1);
+                } else {
+                    msdRadixPassMT(&mas[start], buckets[0], radix - 1);
+                }*/
+                msdRadixPassMT(&mas[start], buckets[0], radix - 1);
                 start = buckets[0];
             } else {
-                msdRadixPass(&mas[start], diff, radix - 1);
+                if (diff > 100000 && tNumber<RANGE) {
+                    threads[tNumber++] = std::thread(msdRadixPassMT, &mas[start], diff, radix - 1);
+                } else {
+                    msdRadixPassMT(&mas[start], diff, radix - 1);
+                }
                 start = buckets[j];
             }
+        }
+    }
+    for (int i = 0; i < tNumber; i++) {
+        if (threads[i].joinable()) {
+            threads[i].join();
         }
     }
     delete []buckets;
 }
 
-void msdRadixSort(UINT64 * mas, UINT64 n) {
-    msdRadixPass(mas, n, 7);
+void msdRadixSortMT(UINT64 * mas, UINT64 n) {
+    msdRadixPassMT(mas, n, 7);
 }
