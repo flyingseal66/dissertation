@@ -20,9 +20,7 @@ const UINT64 RANGE = 257;
 int digitMT(UINT64 num, int radix) {
     UINT64 t_num = 255;
     if(num != 0) {
-        for(int i = 0; i < radix; i++) {
-            num = (num >> 8);
-        }
+        num = num >> 8*radix;
     }
     return (num & t_num);
 }
@@ -86,7 +84,7 @@ void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
                 msdRadixPassMT(&mas[start], buckets[0], radix - 1);
                 start = buckets[0];
             } else {
-                if (diff > 50000 && tNumber<RANGE) {
+                if (diff > 30000 && tNumber<RANGE) {
                     //cout << "enter new thread" << tNumber++ <<endl;
                     threads[tNumber++] = thread(msdRadixPassMT, &mas[start], diff, radix - 1);
                 } else {
