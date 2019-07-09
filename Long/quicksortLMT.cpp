@@ -7,7 +7,7 @@
 
 void quickSortLMT(UINT64 arr[], UINT64 left, UINT64 right) {
     //cnt++;
-    int i = left, j = right;
+    UINT64 i = left, j = right;
     UINT64 tmp;
     UINT64 pivot = arr[right];
     /* partition */

@@ -42,10 +42,9 @@ void countingSortMT(UINT64* mas, UINT64 n, int radix, UINT64 *bucks) {
         count[m] += count[m - 1];
         bucks[m] = count[m];
     }
-
     // sorted temp array
-    auto *t_mas = new UINT64[n];
-    for (i = 0; i < n; ++i) {
+    UINT64 *t_mas = new UINT64[n];
+    for (i = 0; i < n; i++) {
         t_mas[count[digitMT(mas[i], radix)]++] = mas[i];
     }
 
@@ -87,7 +86,7 @@ void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
                 msdRadixPassMT(&mas[start], buckets[0], radix - 1);
                 start = buckets[0];
             } else {
-                if (diff > 100000 && tNumber<RANGE) {
+                if (diff > 50000 && tNumber<RANGE) {
                     //cout << "enter new thread" << tNumber++ <<endl;
                     threads[tNumber++] = thread(msdRadixPassMT, &mas[start], diff, radix - 1);
                 } else {
@@ -95,12 +94,9 @@ void msdRadixPassMT(UINT64* mas, UINT64 n, int radix) {
                 }
                 start = buckets[j];
             }
-
         }
-
     }
 
-    //if (t1.joinable()) t1.join();
     for (int i = 0; i < tNumber; i++) {
         if (threads[i].joinable()) {
             threads[i].join();

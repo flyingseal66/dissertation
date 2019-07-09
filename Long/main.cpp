@@ -9,15 +9,15 @@
 #include "RadixSortLMT2.h"
 
 // the scope of array length
-const int NMIN = 1000000;
-const int NMAX = 1000000001;
+const int NMIN = 100000000;
+const int NMAX = 100000001;
 // the number of cycles
 const int NAVG = 1;
 
 // Execution switcher
 //#define QUICKSORTSTSW
 //#define QUICKSORTMTSW
-#define RADIXSORTSTSW
+//#define RADIXSORTSTSW
 #define RADIXSORTMTSW
 typedef unsigned long long UINT64;
 
